@@ -38,6 +38,8 @@ dependencies:
   http: ^1.6.0
   flutter_native_splash: ^2.4.7
   easy_localization: ^3.0.8
+  cached_network_image: ^3.4.1
+  timeago: ^3.7.1
 
 dev_dependencies:
   flutter_test:
