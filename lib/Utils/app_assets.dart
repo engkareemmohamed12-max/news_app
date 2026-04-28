@@ -8,7 +8,7 @@ class AppAssets {
   static const String busniessLight = 'assets/images/busniess-light.png';
 
 
-  static const String busniessDark = 'assets/images/general-dark.png';
+  static const String busniessDark = 'assets/images/busniess-dark.png';
 
   static const String sportLight = 'assets/images/sport-light.png';
 
