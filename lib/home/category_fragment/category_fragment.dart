@@ -7,8 +7,12 @@ import 'package:provider/provider.dart';
 import '../../Utils/screen_utils.dart';
 import '../../providers/theme_provider.dart';
 
+
+typedef OnCategoryClick = void Function(Category);
+
 class CategoryFragment extends StatelessWidget {
-  const CategoryFragment({super.key});
+  final OnCategoryClick onCategoryClick ;
+  const CategoryFragment({super.key , required this.onCategoryClick});
 
   @override
   Widget build(BuildContext context) {
@@ -23,25 +27,27 @@ class CategoryFragment extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: width * 0.04),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'good-morning'.tr(),
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
-
-          SizedBox(height: height * 0.02),
-
-          
-
-          SizedBox(height: height * 0.02),
-
-          Expanded(
-            child: ListView.separated(
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          spacing: height*0.02,
+          children: [
+            Text(
+              'good-morning'.tr(),
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            ListView.separated(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
-                return CategoryItem(
-                  category: categoriesList[index] , index: index,
+                return InkWell(
+                  onTap: () {
+
+                    onCategoryClick(categoriesList[index]);
+                  },
+                  child: CategoryItem(
+                    category: categoriesList[index] , index: index,
+                  ),
                 );
               },
               separatorBuilder: (context, index) {
@@ -49,8 +55,8 @@ class CategoryFragment extends StatelessWidget {
               },
               itemCount: categoriesList.length,
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

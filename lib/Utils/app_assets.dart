@@ -35,8 +35,12 @@ class AppAssets {
 
   static const String scienceDark = 'assets/images/science-dark.png';
 
+  static const String homeIcon = 'assets/images/Home 1.png';
 
 
+  static const String themeIcon = 'assets/images/roller.png';
+
+  static const String langaugeIcon = 'assets/images/globe-alt.png';
 
 
 }

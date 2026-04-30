@@ -5,11 +5,12 @@ import 'package:news_app/api/api_manager.dart';
 import 'package:news_app/home/category_details/sources/source_widget.dart';
 import 'package:news_app/home/widget/main_error_widget.dart';
 import 'package:news_app/home/widget/main_loading_widget.dart';
+import 'package:news_app/model/category.dart';
 import 'package:news_app/model/source_response.dart';
 
 class CategoryDetails extends StatefulWidget {
-
-  const CategoryDetails({super.key});
+final Category category ;
+  const CategoryDetails({super.key , required this.category});
 
   @override
   State<CategoryDetails> createState() => _CategoryDetailsState();
@@ -19,7 +20,7 @@ class _CategoryDetailsState extends State<CategoryDetails> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-        future: ApiManager.getSources(),
+        future: ApiManager.getSources(widget.category.id),
         builder:(context, snapshot) {
 
           //todo : loading
@@ -32,7 +33,7 @@ class _CategoryDetailsState extends State<CategoryDetails> {
             return MainErrorWidget(
                 errorMessage: 'Something went wrong',
                 onPressed: (){
-                  ApiManager.getSources();
+                  ApiManager.getSources(widget.category.id);
                   setState(() {
 
                   });
@@ -48,7 +49,7 @@ class _CategoryDetailsState extends State<CategoryDetails> {
             return MainErrorWidget(
                 errorMessage: snapshot.data!.message!,
                 onPressed: (){
-                  ApiManager.getSources();
+                  ApiManager.getSources(widget.category.id);
                   setState(() {
 
                   });

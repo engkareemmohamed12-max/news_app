@@ -14,13 +14,14 @@ https://newsapi.org/v2/top-headlines/sources?apiKey=2b2d1f41ba634974b8ee9ba0c0ad
 
 class ApiManager {
 
-  static Future<SourceResponse> getSources() async{
+  static Future<SourceResponse> getSources(String categoryId) async{
 
     try{
 
       Uri url = Uri.https(ApiConstans.baseUrl ,
           EndPoints.sourceApi , {
-            'apiKey' : ApiConstans.apikey
+            'apiKey' : ApiConstans.apikey,
+            'category' : categoryId
           }
       );
 
