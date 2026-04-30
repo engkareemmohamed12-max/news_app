@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:news_app/Utils/app_assets.dart';
 
 class Category {
@@ -18,21 +19,21 @@ class Category {
     return [
       Category(
         id: 'general',
-        title: 'General',
+        title: 'general'.tr(),
         image: isDark
             ? AppAssets.generalLight
             : AppAssets.generalDark,
       ),
       Category(
         id: 'business',
-        title: 'Business',
+        title: 'business'.tr(),
         image: isDark
             ? AppAssets.busniessLight
             : AppAssets.busniessDark,
       ),
       Category(
         id: 'sports',
-        title: 'Sports',
+        title: 'sport'.tr(),
         image: isDark
             ? AppAssets.sportLight
             : AppAssets.sportDark,
@@ -40,7 +41,7 @@ class Category {
 
       Category(
         id: 'technology',
-        title: 'Technology',
+        title: 'technology'.tr(),
         image: isDark
             ? AppAssets.technologyLight
             : AppAssets.technologyDark,
@@ -48,14 +49,14 @@ class Category {
 
       Category(
         id: 'entertainment',
-        title: 'Entertainment',
+        title: 'entertainment'.tr(),
         image: isDark
             ? AppAssets.entertainmentLight
             : AppAssets.entertainmentDark,
       ),
       Category(
         id: 'health',
-        title: 'Health',
+        title: 'health'.tr(),
         image: isDark
             ? AppAssets.healthLight
             : AppAssets.healthDark,
@@ -63,7 +64,7 @@ class Category {
 
       Category(
         id: 'science',
-        title: 'Science',
+        title: 'science'.tr(),
         image: isDark
             ? AppAssets.scienceLight
             : AppAssets.scienceDark,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/Utils/app_color.dart';
+import 'package:news_app/Utils/app_route.dart';
 import 'package:news_app/drawer/home_drawer.dart';
 import 'package:news_app/home/category_details/category_details.dart';
 import 'package:news_app/home/category_fragment/category_fragment.dart';
@@ -30,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           IconButton(
             onPressed: () {
-              // TODO: افتح شاشة البحث أو showSearch
+              Navigator.pushNamed(context, AppRoute.searchRouteName);
             },
             icon: Icon(
               Icons.search,

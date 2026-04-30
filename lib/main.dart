@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:news_app/search/search_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'package:news_app/Utils/app_route.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRoute.homeRouteName,
       routes: {
         AppRoute.homeRouteName: (context) =>  HomeScreen(),
+        AppRoute.searchRouteName: (context) =>  SearchScreen(),
       },
 
       // Theme

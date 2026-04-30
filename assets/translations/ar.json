@@ -8,7 +8,14 @@
   "dark" : "مظلم",
   "light" : "فاتح",
   "english" : "انجليزي",
-  "arabic" : "عربي"
+  "arabic" : "عربي",
+  "general" : "عام",
+  "business" : "عمل",
+  "sport" : "رياضه",
+  "technology" : "تكنولوجيا",
+  "entertainment" : "ترفيه",
+  "health" : "صحة",
+  "science" : "علوم"
 
 
 }

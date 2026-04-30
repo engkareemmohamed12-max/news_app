@@ -9,5 +9,12 @@
   "dark" : "Dark",
   "light" : "Light",
   "english" : "English",
-  "arabic" : "Arabic"
+  "arabic" : "Arabic",
+  "general" : "General",
+  "business" : "Business",
+  "sport" : "Sports",
+  "technology" : "Technology",
+  "entertainment" : "Entertainment",
+  "health" : "Health",
+  "science" : "Science"
 }
