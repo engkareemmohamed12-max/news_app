@@ -1,5 +1,21 @@
 {
 
-  "good-morning" : "صباح الخير\nإليكم بعض الأخبار"
+  "good-morning" : "صباح الخير\nإليكم بعض الأخبار",
+  "new" : "تطبيق الأخبار",
+  "go-to-home" : "اذهب إلى الرئيسيه",
+  "theme" : "الخلفية",
+  "language" : "اللغة",
+  "dark" : "مظلم",
+  "light" : "فاتح",
+  "english" : "انجليزي",
+  "arabic" : "عربي",
+  "general" : "عام",
+  "business" : "عمل",
+  "sport" : "رياضه",
+  "technology" : "تكنولوجيا",
+  "entertainment" : "ترفيه",
+  "health" : "صحة",
+  "science" : "علوم"
+
 
 }

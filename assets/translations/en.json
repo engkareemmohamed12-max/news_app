@@ -1,6 +1,20 @@
 {
 
 
-  "good-morning" : "Good Morning\nHere is Some News For You"
-
+  "good-morning" : "Good Morning\nHere is Some News For You",
+  "new" : "News App",
+  "go-to-home" : "Go To Home",
+  "theme" : "Theme",
+  "language" : "Language",
+  "dark" : "Dark",
+  "light" : "Light",
+  "english" : "English",
+  "arabic" : "Arabic",
+  "general" : "General",
+  "business" : "Business",
+  "sport" : "Sports",
+  "technology" : "Technology",
+  "entertainment" : "Entertainment",
+  "health" : "Health",
+  "science" : "Science"
 }
