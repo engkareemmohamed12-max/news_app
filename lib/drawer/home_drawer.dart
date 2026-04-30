@@ -13,7 +13,8 @@ import '../Utils/screen_utils.dart';
 import '../providers/theme_provider.dart';
 
 class HomeDrawer extends StatelessWidget {
-  const HomeDrawer({super.key});
+  final VoidCallback onDrawerItemClick ;
+  const HomeDrawer({super.key , required this.onDrawerItemClick});
 
   void _showMenu(
       BuildContext context,
@@ -64,9 +65,14 @@ class HomeDrawer extends StatelessWidget {
           ),
         ),
 
-        DrawerItem(
-          iconName: AppAssets.homeIcon,
-          name: 'go-to-home'.tr(),
+        InkWell(
+          onTap: (){
+            onDrawerItemClick();
+          },
+          child: DrawerItem(
+            iconName: AppAssets.homeIcon,
+            name: 'go-to-home'.tr(),
+          ),
         ),
 
         DividerItem(),
