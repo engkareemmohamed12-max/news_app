@@ -8,7 +8,7 @@ class AppAssets {
   static const String busniessLight = 'assets/images/busniess-light.png';
 
 
-  static const String busniessDark = 'assets/images/general-dark.png';
+  static const String busniessDark = 'assets/images/busniess-dark.png';
 
   static const String sportLight = 'assets/images/sport-light.png';
 
@@ -35,8 +35,12 @@ class AppAssets {
 
   static const String scienceDark = 'assets/images/science-dark.png';
 
+  static const String homeIcon = 'assets/images/Home 1.png';
 
 
+  static const String themeIcon = 'assets/images/roller.png';
+
+  static const String langaugeIcon = 'assets/images/globe-alt.png';
 
 
 }
